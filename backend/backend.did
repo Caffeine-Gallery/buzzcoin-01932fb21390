@@ -1,0 +1,29 @@
+type TxRecord = 
+ record {
+   amount: nat;
+   from: principal;
+   timestamp: int;
+   to: principal;
+   txType: text;
+ };
+type Result = 
+ variant {
+   err: text;
+   ok: text;
+ };
+type Caffeine = 
+ service {
+   balanceOf: (principal) -> (nat) query;
+   getMetadata: () ->
+    (record {
+       decimals: nat8;
+       name: text;
+       symbol: text;
+       totalSupply: nat;
+     }) query;
+   getTransactions: (nat, nat) -> (vec TxRecord) query;
+   initialize: () -> ();
+   mine: () -> (Result);
+   transfer: (principal, nat) -> (Result);
+ };
+service : () -> Caffeine

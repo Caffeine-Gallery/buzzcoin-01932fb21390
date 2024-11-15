@@ -1,0 +1,80 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: #2c3e50;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.canister-id {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.table {
+    font-size: 0.9rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#mineButton {
+    font-size: 1.2rem;
+    padding: 15px;
+}
+
+#mineButton:disabled {
+    background-color: #95a5a6;
+    border-color: #95a5a6;
+}
+
+.card-title {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.lead {
+    color: #7f8c8d;
+}
+
+.table thead th {
+    border-top: none;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .table {
+        font-size: 0.8rem;
+    }
+}
